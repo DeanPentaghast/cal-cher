@@ -27,3 +27,7 @@ button {
     background-color: darkgoldenrod;
     border-width: 0;
 }
+
+input {
+    width: 300px;
+}
