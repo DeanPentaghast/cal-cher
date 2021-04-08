@@ -1,0 +1,29 @@
+#container{
+    display: flex;
+    margin:auto;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+}
+ label {
+     display: inline-block;
+     width: 120px;
+ }
+
+ .calc-button {
+     display: flex;
+     width: 80%;
+     align-items: center;
+     justify-content: center;
+ }
+
+button {
+    margin: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 6px;
+    background-color: darkgoldenrod;
+    border-width: 0;
+}
