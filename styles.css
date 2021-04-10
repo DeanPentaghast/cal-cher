@@ -1,4 +1,4 @@
-#container{
+.container{
     display: flex;
     margin:auto;
     width:100%;
@@ -24,10 +24,20 @@ button {
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 6px;
-    background-color: darkgoldenrod;
+    background-color: darkgrey;
     border-width: 0;
+    color: white;
 }
 
 input {
     width: 300px;
+}
+
+h3{
+    border: 1px solid darkgrey;
+    display: flex;
+    width: 50%;
+    align-items: center;
+     justify-content: center;
+     height: 80px;
 }

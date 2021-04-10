@@ -62,5 +62,19 @@ const possibleNums = {
 
 for (j=0; j<49; j++){
     var actualNum = possibleNums[keysArray[j]].reduce((a, b) => a + b, 0);
-    console.log(actualNum);
+    //console.log(actualNum);
 }
+
+function calcBanq(){
+    var banq = parseFloat(document.getElementById('wantedBanq').value);
+    for (j=0; j<49; j++){
+        var actualNum = possibleNums[keysArray[j]].reduce((a, b) => a + b, 0);
+        if (banq <= 950){
+            document.getElementById('result2').innerHTML = ('950');
+            break;
+        } else if (actualNum > banq) {
+            document.getElementById('result2').innerHTML = ((possibleNums[keysArray[(j-1)]]) + ' = ' + (possibleNums[keysArray[(j-1)]].reduce((a, b) => a + b, 0)) + '<br>' + (possibleNums[keysArray[j]]) + '=' + (possibleNums[keysArray[j]].reduce((a, b) => a + b, 0)));
+            break;
+        };
+    };
+};
