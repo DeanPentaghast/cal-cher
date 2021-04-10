@@ -5,11 +5,11 @@
     flex-direction: column;
     align-items: center;
 }
- label {
+/* label {
      display: inline-block;
      width: 120px;
  }
-
+*/
  .calc-button {
      display: flex;
      width: 80%;
