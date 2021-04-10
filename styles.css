@@ -34,7 +34,6 @@ input {
 }
 
 h3{
-    border: 1px solid darkgrey;
     display: flex;
     width: 50%;
     align-items: center;
