@@ -10,55 +10,85 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2 class="title">Altura de Sala</h2>
-            <div class="input-container">
-                <label for="alturaSala">Altura de sala:</label>
-                <input type="text" id='alturaSala' placeholder="altura sala en metros">
-            </div class="input-container">
-            <h2 class="title">Calcular Panelado Roble</h2>
-                <form class="calc-container">
-                    <div class="input-container">
-                        <label for="longPol">Longitud polilineas:</label>
-                        <input type="text" id='longPol'
-                            placeholder="longitud polilineas en metros">
-                    </div>
-                    <div class="input-container">
-                        <label for="longBanq">Longitud Banquette:</label>
-                        <input type="text" id='longBanq' placeholder="longitud banquette verde en metros">
-                    </div>
-                </form>
-                <div class="calc-button">
-                    <button class="calc-btn" onclick="calcRoble()">Calcular</button>
-                </div class="input-container">
-                <h3 id="result">Resultado</h3>
-                <h2 class="title">Calcular Panelado listones:</h2>
-                    <form class="calc-container">
-                        <div class="input-container">
-                            <label for="longPolList">Longitud polilineas:</label>
-                            <input type="text" id='longPolList'
-                                placeholder="longitud polilineas en metros">
-                        </div>
-                    </form>
-                    <div class="calc-button">
-                        <button class="calc-btn1" onclick="calcListones()">Calcular</button>
-                    </div>
-                    <h3 id="result1">Resultado</h3>
-
-                    <h2 class="title">Calcular Banquettes:</h2>
-                        <form class="calc-container">
-                            <div class="input-container">
-                                <label for="wantedBanq">Longitud banquette:</label>
-                                <input type="text" id='wantedBanq'
-                                    placeholder="longitud del banco en milimetros, máximo 8800">
-                            </div>
-                        </form>
-                        <div class="calc-button">
-                            <button class="calc-btn2" onclick="calcBanq()">Calcular</button>
-                        </div>
-                        <h3 id="result2">Resultado</h3>
-
-    </div>
+    <form onsubmit="return false">
+        <ul>
+            <li>
+                <h2>Altura de sala</h2>
+            </li>
+            <li>
+                <label for="alturaSala">
+                    Altura de sala:
+                </label>
+                <input type="text" id='alturaSala' placeholder="Altura en metros">
+            </li>
+        </ul>
+    </form>
+    <form onsubmit="return false">
+        <ul>
+            <li>
+                <h2>Panelado de roble</h2>
+            </li>
+            <li>
+                <label for="longPol">
+                    Longitud polilineas:
+                </label>
+                <input type="text" id="longPol" placeholder="Longitud en metros">
+            </li>
+            <li>
+                <label for="longBanq">
+                    Longitud banquette:
+                </label>
+                <input type="text" id="longBanq" placeholder="Longitud en metros">
+            </li>
+            <li>
+                <button onclick="calcRoble()">Calcular
+                </button>
+            </li>
+            <li>
+                <p class="result" id="result">Resultado</p>
+            </li>
+        </ul>
+    </form>
+    <form onsubmit="return false">
+        <ul>
+            <li>
+                <h2>Panelado de listones</h2>
+            </li>
+            <li>
+                <label for="longPolList">
+                    Longitud polilineas:
+                </label>
+                <input type="text" id="longPolList" placeholder="Longitud en metros">
+            </li>
+            <li>
+                <button onclick="calcListones()">Calcular
+                </button>
+            </li>
+            <li>
+                <p class="result" id="result1">Resultado</p>
+            </li>
+        </ul>
+    </form>
+    <form onsubmit="return false">
+        <ul>
+            <li>
+                <h2>Modulos banquette</h2>
+            </li>
+            <li>
+                <label for="wantedBanq">
+                    Longitud deseada:
+                </label>
+                <input type="text" id="wantedBanq" placeholder="Longitud en milimetros">
+            </li>
+            <li>
+                <button onclick="calcBanq()">Calcular
+                </button>
+            </li>
+            <li>
+                <p class="result" id="result2">Resultado</p>
+            </li>
+        </ul>
+    </form>
 </body>
 <script src="app.js"></script>
 <script src="bancCalc.js"></script>

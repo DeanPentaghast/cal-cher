@@ -1,53 +1,73 @@
-.container{
-    display: flex;
-    margin:auto;
-    width:100%;
-    flex-direction: column;
-    align-items: center;
-}
-/* label {
-     display: inline-block;
-     width: 120px;
- }
-*/
- .calc-button {
-     display: flex;
-     width: 80%;
-     align-items: center;
-     justify-content: center;
- }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-button {
-    margin: 4px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 6px;
-    background-color: darkgrey;
-    border-width: 0;
-    color: white;
+html{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(80,80,80);
+}
+
+ul{
+  list-style: none;
+  font-size: 1.25em;
+}
+
+form {
+  border: none;
+  border-radius: 12px;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 20px;
+  background-color: rgb(40,40,40);
+  min-width: 300px;
+  padding-bottom: 35px;
+  padding-top: 15px;
+  filter: drop-shadow(5px 5px 5px black)
+}
+
+label {
+  display: block;
+  color: white;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 input {
-    width: 300px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+ display: inline;
+ background-color: rgb(40,40,40);
+ width: 80%;
+ font-size: 0.7em;
+ border: none;
+ border-bottom: 1px solid white;
+ border-radius: 0px;
+ margin-bottom: 12px;
+ line-height: 2em;
+ color: rgb(180,180,180);
+ font-weight: 100;
 }
 
-h3{
-    display: flex;
-    width: 50%;
-    align-items: center;
-     justify-content: center;
-     height: 80px;
+li {
+  margin-bottom: 8px;
 }
 
-.input-container{
-    display: flex;
-    margin:auto;
-    width:100%;
-    flex-direction: column;
-    align-items: center;
+button {
+  font-size: 1em;
+  background-color: rgb(150,150,150);
+  padding: 10px 60px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: none;
 }
 
+.result {
+  display: block;
+  color: white;
+  border-bottom: 1px white solid;
+  width: 80%;
+  line-height: 1em;
+  font-size: 1em;
+  padding-bottom: 8px;
+}
+
+h2{
+  color: white;
+  font-size: 1.5em;
+}
