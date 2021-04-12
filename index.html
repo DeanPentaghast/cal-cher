@@ -13,6 +13,9 @@
     <form onsubmit="return false">
         <ul>
             <li>
+                <h2>Altura de sala</h2>
+            </li>
+            <li>
                 <label for="alturaSala">
                     Altura de sala:
                 </label>
@@ -86,8 +89,31 @@
             </li>
         </ul>
     </form>
+
+    <form onsubmit="return false">
+        <ul>
+            <li>
+                <h2>Mostrador entregas</h2>
+            </li>
+            <li>
+                <label for="longMost">
+                    Longitud deseada:
+                </label>
+                <input type="text" id="longMost" placeholder="Longitud en milimetros">
+            </li>
+            <li>
+                <button onclick="calcMost()">Calcular
+                </button>
+            </li>
+            <li>
+                <p class="result" id="result3">Resultado</p>
+            </li>
+        </ul>
+    </form>
+
 </body>
 <script src="app.js"></script>
 <script src="bancCalc.js"></script>
+<script src="longMost.js"></script>
 
 </html>
