@@ -67,7 +67,7 @@ for (j=0; j<51; j++){
 
 function calcBanq(){
     var banq = parseFloat(document.getElementById('wantedBanq').value);
-    for (j=0; j<49; j++){
+    for (j=0; j<50; j++){
         var actualNum = possibleNums[keysArray[j]].reduce((a, b) => a + b, 0);
         if (banq <= 950){
             document.getElementById('result2').innerHTML = ('950');
