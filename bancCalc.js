@@ -1,7 +1,7 @@
 const numArray = [950, 1340, 1760];
 const numObjective = 0;
 const keysArray = [];
-for (i=1; i<51; i++) {
+for (i=1; i<50; i++) {
     keysArray.push('num' + i);
 }
 
@@ -51,16 +51,17 @@ const possibleNums = {
     num43: [1340, 1340, 1340, 1340, 1340],
     num44: [950, 1340, 1340, 1340, 1760],
     num45: [950, 950, 1760, 1760, 1340],
-    num46: [1340, 1340, 1340, 1340, 1760],
-    num47: [950, 950, 1760, 1760, 1760],
-    num48: [950, 1760, 1760, 1760, 1340],
-    num49: [950, 1760, 1760, 1760, 1760],
-    num50: [1760, 1760, 1760, 1760, 1760]
+    num46: [1760, 1760, 1760, 1760],
+    num47: [1340, 1340, 1340, 1340, 1760],
+    num48: [950, 950, 1760, 1760, 1760],
+    num49: [950, 1760, 1760, 1760, 1340],
+    num50: [950, 1760, 1760, 1760, 1760],
+    num51: [1760, 1760, 1760, 1760, 1760]
 }
 
 //console.log(possibleNums[keysArray[5]].reduce((a, b) => a + b, 0));
 
-for (j=0; j<50; j++){
+for (j=0; j<51; j++){
     var actualNum = possibleNums[keysArray[j]].reduce((a, b) => a + b, 0);
     console.log(actualNum);
 }
