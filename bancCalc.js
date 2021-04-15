@@ -1,7 +1,7 @@
 const numArray = [950, 1340, 1760];
 const numObjective = 0;
 const keysArray = [];
-for (i=1; i<49; i++) {
+for (i=1; i<50; i++) {
     keysArray.push('num' + i);
 }
 
