@@ -62,7 +62,7 @@ const possibleNums = {
 
 for (j=0; j<50; j++){
     var actualNum = possibleNums[keysArray[j]].reduce((a, b) => a + b, 0);
-    //console.log(actualNum);
+    console.log(actualNum);
 }
 
 function calcBanq(){
